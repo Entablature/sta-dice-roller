@@ -4,18 +4,40 @@ body {
 }
 
 h1 {
-    color: rgb(240, 218, 190);
+    color: rgb(255, 195, 245);
 }
 
 h2 {
-    color: rgb(245, 245, 245);
+    color: rgb(255, 152, 67);
+    
 }
 
-.lcars-horiz-bar {
+/* container flexbox styling to float lcars title bars in a row */
+.container {
+    display: flex;
+}
+
+/* semi-circular horizontal bar elements */
+.lcars-round-bar {
     border-top-left-radius: 50px;
     border-bottom-left-radius: 50px;
-    background-color: rgb(255, 218, 149);
-    padding: 20px;
-    width: 400px;
-    height: 100px;
+    background-color: rgb(255, 152, 67);
+    margin: 10px;
+    width: 50px;
+    height: 25px;
+}
+
+/* text in horizontal bar elements */
+.lcars-text {
+    margin: 10px;
+    height: 25px;
+}
+
+/* non-rounded horizontal bar elements */
+.lcars-horiz-bar {
+   
+    background-color: rgb(255, 152, 67);
+    margin: 10px;
+    width: 700px;
+    height: 25px;
 }
