@@ -15,6 +15,7 @@ h2 {
 /* container flexbox styling to float lcars title bars in a row */
 .container {
     display: flex;
+    width: 97%
 }
 
 /* semi-circular horizontal bar elements */
@@ -23,21 +24,25 @@ h2 {
     border-bottom-left-radius: 50px;
     background-color: rgb(255, 152, 67);
     margin: 10px;
-    width: 50px;
+    min-width: 35px;
+    height: 25px;
+}
+
+/* non-rounded horizontal bar elements */
+.lcars-horiz-bar {
+    background-color: rgb(255, 152, 67);
+    margin: 10px;
+    width: 75%;
     height: 25px;
 }
 
 /* text in horizontal bar elements */
 .lcars-text {
     margin: 10px;
+    min-width: 200px;
     height: 25px;
 }
 
-/* non-rounded horizontal bar elements */
-.lcars-horiz-bar {
-   
-    background-color: rgb(255, 152, 67);
-    margin: 10px;
-    width: 700px;
-    height: 25px;
+.dice-roller {
+    position: relative;
 }
