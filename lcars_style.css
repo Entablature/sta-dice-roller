@@ -8,18 +8,38 @@ h1 {
 }
 
 h2 {
-    color: rgb(255, 152, 67);
-    
+    color: rgb(255, 152, 67); 
+}
+
+/* left sidbar box elements */
+div.box {
+    background-color: blanchedalmond;
+    width: 150px;
+    height: 120px;
+    margin: 0px 0px 5px 10px;
+    position: relative; 
+}
+
+/* text in the left lcars sidebar */
+div.box p {
+    background-color: blanchedalmond;
+    color: rgba(45, 46, 46, 0.966);
+    font-size: .8em;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
 }
 
 /* container flexbox styling to float lcars title bars in a row */
 .container {
     display: flex;
-    width: 97%
 }
 
 /* semi-circular horizontal bar elements */
-.lcars-round-bar {
+.lcars-bar-left {
     border-top-left-radius: 50px;
     border-bottom-left-radius: 50px;
     background-color: rgb(255, 152, 67);
@@ -29,7 +49,9 @@ h2 {
 }
 
 /* non-rounded horizontal bar elements */
-.lcars-horiz-bar {
+.lcars-bar-right {
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
     background-color: rgb(255, 152, 67);
     margin: 10px;
     width: 75%;
@@ -37,12 +59,26 @@ h2 {
 }
 
 /* text in horizontal bar elements */
-.lcars-text {
+.lcars-bar-text {
     margin: 10px;
     min-width: 200px;
     height: 25px;
 }
 
 .dice-roller {
-    position: relative;
+    /*position: relative;*/
+}
+
+/* the div defining the left-hand lcars sidebar */
+.sidebar {
+    /*background-color: blanchedalmond;*/
+    width: 170px;
+    display: inline-block;
+    float: left;
+}
+
+
+.content {
+    display: block;
+    width: 90%;
 }
