@@ -33,9 +33,50 @@ div.box p {
     right: 5px;
 }
 
+div.top {
+    height: 120px;
+    margin: 0px 0px 5px 10px;
+}
+
 /* container flexbox styling to float lcars title bars in a row */
 .container {
     display: flex;
+}
+
+/* sidbar full-page wrapper bottom left corner */
+.full-bar-bottom-corner {
+    border-bottom-left-radius: 50px;
+    background-color: blanchedalmond;
+    margin: 0px 0px 5px 10px;
+    min-width: 270px;
+    height: 25px;
+}
+
+/* sidbar full-page wrapper upper left corner */
+.full-bar-top-corner {
+    border-top-left-radius: 50px;
+    background-color: blanchedalmond;
+    margin: 0px 0px 5px 10px;
+    min-width: 270px;
+    height: 25px;
+}
+
+/* sidebar wrapper middle horizontal bar */
+.full-bar-mid {
+    background-color: blanchedalmond;
+    margin: 0px 0px 5px 5px;
+    min-width: 250px;
+    height: 25px;
+}
+
+/* sidebar wrapper right-hand horizontal bar */
+.full-bar-right {
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background-color: blanchedalmond;
+    margin: 0px 10px 5px 5px;
+    width: 75%;
+    height: 25px;
 }
 
 /* semi-circular horizontal bar elements */
@@ -54,7 +95,7 @@ div.box p {
     border-bottom-right-radius: 50px;
     background-color: rgb(255, 152, 67);
     margin: 10px;
-    width: 75%;
+    width: 95%;
     height: 25px;
 }
 
@@ -65,20 +106,15 @@ div.box p {
     height: 25px;
 }
 
-.dice-roller {
-    /*position: relative;*/
-}
-
 /* the div defining the left-hand lcars sidebar */
 .sidebar {
-    /*background-color: blanchedalmond;*/
     width: 170px;
-    display: inline-block;
     float: left;
 }
 
-
 .content {
     display: block;
-    width: 90%;
+    width: 99%;
+    height: 620px; /* need to manually adjust this to account for final sidebar height */
+    margin: 0px 0px 5px 0px;
 }
