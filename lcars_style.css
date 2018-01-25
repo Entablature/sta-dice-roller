@@ -15,7 +15,7 @@ h2 {
 div.box {
     background-color: blanchedalmond;
     width: 150px;
-    height: 120px;
+    height: 105px;
     margin: 0px 0px 5px 10px;
     position: relative; 
 }
@@ -31,6 +31,18 @@ div.box p {
     position: absolute;
     bottom: 5px;
     right: 5px;
+}
+
+/* the vertical portion of the sidebar box that connects to the rounded horizontal bar from above */
+div.box.corner {
+    height: 15px;
+    margin: 0px 0px 0px 10px;
+}
+
+/* the vertical portion of the sidebar box that connects to the rounded horizontal bar from underneath */
+div.box.top-corner {
+    height: 15px;
+    margin: -5px 0px 5px 10px;
 }
 
 div.top {
@@ -115,6 +127,6 @@ div.top {
 .content {
     display: block;
     width: 99%;
-    height: 620px; /* need to manually adjust this to account for final sidebar height */
+    height: 575px; /* need to manually adjust this to account for final sidebar height */
     margin: 0px 0px 5px 0px;
 }
