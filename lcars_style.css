@@ -4,16 +4,25 @@ body {
 }
 
 h1 {
-    color: rgb(255, 195, 245);
+    color: rgb(247, 242, 246);
 }
 
 h2 {
     color: rgb(255, 152, 67); 
 }
 
+/*the h1 element in the top rounded corner area */
+div.top h1{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 5px;
+    right: 20px;
+}
+
 /* left sidbar box elements */
 div.box {
-    background-color: blanchedalmond;
+    background-color: rgb(245, 200, 104);
     width: 150px;
     height: 105px;
     margin: 0px 0px 5px 10px;
@@ -22,7 +31,73 @@ div.box {
 
 /* text in the left lcars sidebar */
 div.box p {
-    background-color: blanchedalmond;
+    background-color: rgb(245, 200, 104);
+    color: rgba(45, 46, 46, 0.966);
+    font-size: .8em;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}
+
+/* left sidebar box elements different color */
+div.box.alt-color {
+    background-color: rgb(169, 181, 231);
+    width: 150px;
+    height: 105px;
+    margin: 0px 0px 5px 10px;
+    position: relative; 
+}
+
+/* text in the left lcars sidebar different color */
+div.box.alt-color p {
+    background-color: rgb(169, 181, 231);
+    color: rgba(45, 46, 46, 0.966);
+    font-size: .8em;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}
+
+/* left sidebar box elements longer box */
+div.box.long {
+    background-color: rgb(169, 181, 231);
+    width: 150px;
+    height: 220px;
+    margin: 0px 0px 5px 10px;
+    position: relative; 
+}
+
+/* text in the left lcars sidebar longer box */
+div.box.long p {
+    background-color: rgb(169, 181, 231);
+    color: rgba(45, 46, 46, 0.966);
+    font-size: .8em;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}
+
+/* left sidebar box elements longer box */
+div.box.short {
+    background-color: rgb(169, 181, 231);
+    width: 150px;
+    height: 60px;
+    margin: 0px 0px 5px 10px;
+    position: relative; 
+}
+
+/* text in the left lcars sidebar longer box */
+div.box.short p {
+    background-color: rgb(169, 181, 231);
     color: rgba(45, 46, 46, 0.966);
     font-size: .8em;
     font-weight: 600;
@@ -35,12 +110,14 @@ div.box p {
 
 /* the vertical portion of the sidebar box that connects to the rounded horizontal bar from above */
 div.box.corner {
+    background-color: rgba(241, 169, 235, 0.897);
     height: 15px;
     margin: 0px 0px 0px 10px;
 }
 
 /* the vertical portion of the sidebar box that connects to the rounded horizontal bar from underneath */
 div.box.top-corner {
+    background-color: rgba(241, 169, 235, 0.897);
     height: 15px;
     margin: -5px 0px 5px 10px;
 }
@@ -55,19 +132,19 @@ div.top {
     display: flex;
 }
 
-/* sidbar full-page wrapper bottom left corner */
+/* sidebar full-page wrapper bottom left corner */
 .full-bar-bottom-corner {
     border-bottom-left-radius: 50px;
-    background-color: blanchedalmond;
+    background-color: rgba(241, 169, 235, 0.897);
     margin: 0px 0px 5px 10px;
     min-width: 270px;
     height: 25px;
 }
 
-/* sidbar full-page wrapper upper left corner */
+/* sidebar full-page wrapper upper left corner */
 .full-bar-top-corner {
     border-top-left-radius: 50px;
-    background-color: blanchedalmond;
+    background-color: rgba(241, 169, 235, 0.897);
     margin: 0px 0px 5px 10px;
     min-width: 270px;
     height: 25px;
@@ -75,7 +152,7 @@ div.top {
 
 /* sidebar wrapper middle horizontal bar */
 .full-bar-mid {
-    background-color: blanchedalmond;
+    background-color: rgb(197, 94, 116);
     margin: 0px 0px 5px 5px;
     min-width: 250px;
     height: 25px;
@@ -85,7 +162,7 @@ div.top {
 .full-bar-right {
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;
-    background-color: blanchedalmond;
+    background-color: rgba(241, 169, 235, 0.897);
     margin: 0px 10px 5px 5px;
     width: 75%;
     height: 25px;
@@ -127,6 +204,6 @@ div.top {
 .content {
     display: block;
     width: 99%;
-    height: 575px; /* need to manually adjust this to account for final sidebar height */
+    height: 535px; /* need to manually adjust this to account for final sidebar height */
     margin: 0px 0px 5px 0px;
 }
